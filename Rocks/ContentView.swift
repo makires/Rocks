@@ -6,39 +6,25 @@
 //
 
 import SwiftUI
-
 let data: [ClimbingLocation] = Bundle.main.decode("gesh.json")
-
+// это данные которые мы будем передавать второму вью
 struct ContentView: View {
+ 
     
     var body: some View {
         NavigationView {
-            VStack {
-                List {
-                    ForEach(data) { location in
-                        NavigationLink(destination: List { ForEach(location.crags)
-                        { crag in
-                            NavigationLink(destination: List { ForEach(crag.routes)
-                            { route in
-                                RowRoute(route: route) } }
-                            ) {
-                                RowCrag(crag: crag)
-                            }
-                        }
-                        
-                        }
-                        
-                        ) {
-                            Text(location.name)
-                            
-                        }
-                    }
-                    .padding()
+            VStack(spacing: 20) {
+            ForEach(data) { location in
+                
+                NavigationLink(destination:
+                    ListCrags(crags: location.crags, location: location) ) {
+                RowLocation(location: location)
                 }
+                
             }
-            .navigationBarTitle("Скалы Шерегеша")
+            .navigationBarTitle("Climbing Gesh")
+            }
         }
-        
     }
 }
 
@@ -48,3 +34,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

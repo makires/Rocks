@@ -3,6 +3,7 @@
     {
         "id":1,
         "name":"Верблюды",
+        "imageLocation":"camelsLocation",
         "crags": [
             {
                 
@@ -363,6 +364,7 @@
     {
         "id":2,
         "name": "Сектор Е",
+        "imageLocation":"sectorELocation",
         "crags": [
             {
                 
@@ -474,6 +476,7 @@
     {
         "id":3,
         "name":"Сарлыки",
+        "imageLocation":"sarlykLocation",
         "crags": [
             {
                 

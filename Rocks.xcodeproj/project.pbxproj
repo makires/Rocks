@@ -16,8 +16,12 @@
 		CE86F3C42549F277003E2E1C /* gesh.json in Resources */ = {isa = PBXBuildFile; fileRef = CE86F3C32549F277003E2E1C /* gesh.json */; };
 		CE86F3C72549F2A4003E2E1C /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86F3C62549F2A4003E2E1C /* Decodable.swift */; };
 		CE86F3CA2549F313003E2E1C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86F3C92549F313003E2E1C /* Model.swift */; };
-		CE86F3CD2549F6D0003E2E1C /* RowRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86F3CC2549F6D0003E2E1C /* RowRoute.swift */; };
-		CE86F3D02549FC67003E2E1C /* RowCrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86F3CF2549FC67003E2E1C /* RowCrag.swift */; };
+		CEC7D3FE2553D6C00065B54B /* ListCrags.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7D3FD2553D6C00065B54B /* ListCrags.swift */; };
+		CEC7D4022553E1680065B54B /* ListRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7D4012553E1680065B54B /* ListRoutes.swift */; };
+		CEC7D4052553E3300065B54B /* RowRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7D4042553E3300065B54B /* RowRoute.swift */; };
+		CEC7D4082553E3A60065B54B /* RowCrag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7D4072553E3A60065B54B /* RowCrag.swift */; };
+		CEC7D40B25551C970065B54B /* CragImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7D40A25551C970065B54B /* CragImage.swift */; };
+		CEC7D40E25554C290065B54B /* RowLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7D40D25554C290065B54B /* RowLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +36,12 @@
 		CE86F3C32549F277003E2E1C /* gesh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gesh.json; sourceTree = "<group>"; };
 		CE86F3C62549F2A4003E2E1C /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		CE86F3C92549F313003E2E1C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		CE86F3CC2549F6D0003E2E1C /* RowRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowRoute.swift; sourceTree = "<group>"; };
-		CE86F3CF2549FC67003E2E1C /* RowCrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowCrag.swift; sourceTree = "<group>"; };
+		CEC7D3FD2553D6C00065B54B /* ListCrags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCrags.swift; sourceTree = "<group>"; };
+		CEC7D4012553E1680065B54B /* ListRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRoutes.swift; sourceTree = "<group>"; };
+		CEC7D4042553E3300065B54B /* RowRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowRoute.swift; sourceTree = "<group>"; };
+		CEC7D4072553E3A60065B54B /* RowCrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowCrag.swift; sourceTree = "<group>"; };
+		CEC7D40A25551C970065B54B /* CragImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragImage.swift; sourceTree = "<group>"; };
+		CEC7D40D25554C290065B54B /* RowLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,14 +74,19 @@
 		CE86F3AD2549F262003E2E1C /* Rocks */ = {
 			isa = PBXGroup;
 			children = (
+				CEC7D3DC255328C30065B54B /* View Models */,
 				CE86F3AE2549F262003E2E1C /* AppDelegate.swift */,
 				CE86F3B02549F262003E2E1C /* SceneDelegate.swift */,
 				CE86F3B22549F262003E2E1C /* ContentView.swift */,
-				CE86F3CF2549FC67003E2E1C /* RowCrag.swift */,
-				CE86F3CC2549F6D0003E2E1C /* RowRoute.swift */,
-				CE86F3C32549F277003E2E1C /* gesh.json */,
+				CEC7D40D25554C290065B54B /* RowLocation.swift */,
+				CEC7D3FD2553D6C00065B54B /* ListCrags.swift */,
+				CEC7D40A25551C970065B54B /* CragImage.swift */,
+				CEC7D4072553E3A60065B54B /* RowCrag.swift */,
+				CEC7D4012553E1680065B54B /* ListRoutes.swift */,
+				CEC7D4042553E3300065B54B /* RowRoute.swift */,
 				CE86F3C62549F2A4003E2E1C /* Decodable.swift */,
 				CE86F3C92549F313003E2E1C /* Model.swift */,
+				CE86F3C32549F277003E2E1C /* gesh.json */,
 				CE86F3B42549F265003E2E1C /* Assets.xcassets */,
 				CE86F3B92549F265003E2E1C /* LaunchScreen.storyboard */,
 				CE86F3BC2549F265003E2E1C /* Info.plist */,
@@ -88,6 +101,13 @@
 				CE86F3B72549F265003E2E1C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEC7D3DC255328C30065B54B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,12 +181,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC7D4052553E3300065B54B /* RowRoute.swift in Sources */,
+				CEC7D3FE2553D6C00065B54B /* ListCrags.swift in Sources */,
 				CE86F3CA2549F313003E2E1C /* Model.swift in Sources */,
-				CE86F3CD2549F6D0003E2E1C /* RowRoute.swift in Sources */,
+				CEC7D4082553E3A60065B54B /* RowCrag.swift in Sources */,
 				CE86F3AF2549F262003E2E1C /* AppDelegate.swift in Sources */,
-				CE86F3D02549FC67003E2E1C /* RowCrag.swift in Sources */,
 				CE86F3C72549F2A4003E2E1C /* Decodable.swift in Sources */,
+				CEC7D40B25551C970065B54B /* CragImage.swift in Sources */,
+				CEC7D40E25554C290065B54B /* RowLocation.swift in Sources */,
 				CE86F3B12549F262003E2E1C /* SceneDelegate.swift in Sources */,
+				CEC7D4022553E1680065B54B /* ListRoutes.swift in Sources */,
 				CE86F3B32549F262003E2E1C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

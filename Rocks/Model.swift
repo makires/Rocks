@@ -7,19 +7,26 @@
 
 import Foundation
 
+
+
 struct ClimbingLocation: Codable, Identifiable {
     let id: Int
     let name: String
-    let crags: [Crags]
-    struct Crags: Codable, Identifiable {
-        let id = UUID()
-        let cragName: String
-        let routes: [Route]
-        struct Route: Codable, Identifiable {
-            let id = UUID()
-            let name: String
-            let grade: String
-            let bolts: String
-        }
-    }
+    let imageLocation: String
+    let crags: [Crag]
+    
 }
+struct Crag: Codable, Identifiable {
+    let id = UUID()
+    let cragName: String
+    let routes: [Route]
+    
+}
+struct Route: Codable, Identifiable {
+    let id = UUID()
+    let name: String
+    let grade: String
+    let bolts: String
+}
+
+

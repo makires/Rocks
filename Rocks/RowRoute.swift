@@ -1,18 +1,20 @@
 //
-//  DetailCrag.swift
+//  RowRoute.swift
 //  Rocks
 //
-//  Created by Tatiana Ilvutikova on 29.10.2020.
+//  Created by Tatiana Ilvutikova on 05.11.2020.
 //
 
 import SwiftUI
 
 struct RowRoute: View {
-    let route: ClimbingLocation.Crags.Route
+    let route: Route
     
     var body: some View {
         HStack {
             Text(route.name)
+            Spacer()
+            Divider()
             Text(route.grade)
             Text(route.bolts)
         }
